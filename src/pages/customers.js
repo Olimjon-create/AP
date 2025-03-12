@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "../styles/Customern.css";
+import "../styles/customern.css";
 function Customer(props) {
   const arr = [
     {
@@ -79,7 +79,7 @@ function Customer(props) {
       <div className="live"></div>;
       <div className="input-customer-search">
         <div className="search">
-          <input type="search" placeholder="Search here" />
+          <input type="search" id="result" placeholder="Search here" />
         </div>
         <div className="icon_search">
           <Image
