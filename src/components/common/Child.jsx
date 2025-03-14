@@ -5,7 +5,7 @@ class OtaKompanent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: "bu ota komponent malumotlari",
+      message: "Hello World",
     };
   }
 
