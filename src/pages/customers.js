@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "../styles/Customern.css";
+import "../styles/Customern.module.css";
 function Customer(props) {
   const arr = [
     {

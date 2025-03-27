@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/usememo.css";
+import "../styles/usememo.module.css";
 export const Controllid = () => {
   const [count, setCount] = useState(0);
 
