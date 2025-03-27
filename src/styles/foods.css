@@ -1,0 +1,295 @@
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+  margin-top: 20px;
+}
+body {
+  background-color: #f4f4f4;
+}
+.text {
+  color: #464255;
+  font-size: 32px;
+  margin: 20px 0 0 70px;
+}
+
+.text1 {
+  font-size: 16px;
+  color: #a3a3a3;
+  margin: 0 0 0 70px;
+}
+
+.btn {
+  width: 182px;
+  height: 68px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  color: #3e4954;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+.Section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1466px;
+  height: 70px;
+  background-color: #2d9cdb;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.Select ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.Select ul li {
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+  margin: 0;
+}
+
+.Select ul img {
+  width: 16px;
+  height: 16px;
+}
+
+.Option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1468px;
+  height: 74px;
+  background-color: #fff;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.Value {
+  display: flex;
+  align-items: center;
+}
+
+.Value ul {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.Value ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.text3 {
+  margin-left: 85px;
+}
+
+.text4 {
+  margin-left: 90px;
+}
+
+.text5 {
+  margin-left: 5px;
+}
+
+.btn2 {
+  width: 77px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #464255;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.btn2:hover {
+  background-color: #e0e0e0;
+}
+
+.photo {
+  margin-left: 40px;
+}
+
+.photos {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.input-customer-search {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.search input {
+  width: 866px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #fdfdfd;
+  color: #ebebeb;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: 50px;
+  padding-left: 15px;
+}
+
+.icon_search {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  margin-top: 50px;
+  background-color: #5e6c9326;
+  cursor: pointer;
+}
+
+hr {
+  width: 0;
+  height: 56px;
+  border: 1px solid #d0d6de;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.borders {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  border: 5px solid #fff;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.customer_text {
+  margin-top: 40px;
+}
+.img_tag {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.search input {
+  background-color: #fdfdfd;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+}
+.searchs input {
+  margin-top: 30px;
+  margin-left: 70px;
+  width: 491px;
+  height: 68px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.food_text {
+  font-family: sans-serif;
+  color: #464255;
+  font-size: 32px;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.food_text2 {
+  font-family: sans-serif;
+  color: #a3a3a3;
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.dod_button {
+  width: 68px;
+  height: 68px;
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.contact_button {
+  width: 181px;
+  height: 68px;
+  border-radius: 14px;
+  background-color: #00b074;
+  border: none;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+.contact_button img {
+  margin-right: 15px;
+}
+.card_button {
+  width: 276px;
+  height: 433px;
+  border-radius: 10px;
+  margin-top: 120px;
+  background-color: #ffff;
+  margin-left: 80px;
+}
+.radius_button {
+  width: 194px;
+  height: 194px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  margin-left: 45px;
+}
+.text_5 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #464255;
+  margin-top: 50px;
+  text-align: center;
+}
+.text_6 {
+  margin-top: 15px;
+}
+.text_7 {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #5e6;
+  margin-left: 90px;
+}
+.ddd {
+  display: flex;
+  gap: 2px;
+}
+.food_button {
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+.food-cards {
+  display: flex;
+}
