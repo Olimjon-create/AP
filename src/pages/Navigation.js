@@ -5,10 +5,6 @@ import Link from "next/link";
 export default function Navigation() {
   const router = useRouter();
 
-  useEffect(() => {
-    router.push("/customers");
-  }, [router.pathname]);
-
   const links = [
     { href: "/customers", label: "Dashboard" },
     { href: "/orders", label: "Order List" },

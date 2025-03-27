@@ -4,11 +4,6 @@ import Link from "next/link";
 
 export default function Order() {
   const router = useRouter();
-  useEffect(() => {
-    if (router.isReady && router.pathname === "/") {
-      router.push("/order-detail");
-    }
-  }, [router.isReady]);
 
   const links = [
     {

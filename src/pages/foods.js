@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/foods.css";
+import "../styles/foods.module.css";
 import Image from "next/image";
 
 const foods = [
@@ -86,7 +86,7 @@ function Foods() {
         <div className="text_s">
           <h1 className="food_text">Foods</h1>
           <p className="food_text2">
-            Here is your menu's summary with graph view
+            Here is your menus summary with graph view
           </p>
         </div>
 

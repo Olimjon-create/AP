@@ -1,14 +1,9 @@
-import { useEffect, useState, memo } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function Order() {
   const router = useRouter();
-  useEffect(() => {
-    if (router.isReady && router.pathname === "/") {
-      router.push("/customers");
-    }
-  }, [router.isReady]);
 
   const links = [
     {
