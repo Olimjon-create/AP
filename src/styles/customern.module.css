@@ -1,6 +1,4 @@
-body {
-  background-color: #f4f4f4;
-  font-family: sans-serif;
+:global(body) {
   margin: 0;
   padding: 0;
 }
@@ -200,9 +198,10 @@ hr {
   margin-top: 10px;
   margin-left: 10px;
 }
+
 .left_sedap {
-  width: 349;
-  height: 1430;
+  width: 349px;
+  height: 1430px;
   left: -4px;
   background-color: #f4f4f4;
 }

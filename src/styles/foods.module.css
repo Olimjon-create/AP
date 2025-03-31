@@ -3,11 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 70px;
-  margin-top: 20px;
 }
-body {
-  background-color: #f4f4f4;
-}
+
 .text {
   color: #464255;
   font-size: 32px;
@@ -166,13 +163,13 @@ body {
   cursor: pointer;
 }
 
-hr {
+/* hr {
   width: 0;
   height: 56px;
   border: 1px solid #d0d6de;
   margin-left: 30px;
   margin-top: 50px;
-}
+} */
 
 .borders {
   width: 56px;

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -9,34 +8,29 @@ export default function Order() {
     {
       href: "/customers",
       label: "Orders",
-      element: <Link to="/customers">Dashboard</Link>,
     },
     {
       href: "/orders",
       label: "Order List",
-      element: <Link to="/orders">Order List</Link>,
     },
     {
       href: "#",
       label: "Order Detail",
-      element: <Link to="#">Order Detail</Link>,
     },
-    { href: "#", label: "Analytics", element: <Link to="#">Analytics</Link> },
-    { href: "#", label: "Reviews", element: <Link to="#">Reviews</Link> },
-    { href: "#", label: "Foods", element: <Link to="#">Foods</Link> },
+    { href: "#", label: "Analytics" },
+    { href: "#", label: "Reviews" },
+    { href: "#", label: "Foods" },
     {
       href: "#",
       label: "Food Detail",
-      element: <Link to="#">Food Detail</Link>,
     },
     {
       href: "#",
       label: "Customer Detail",
-      element: <Link to="#">Customer Detail</Link>,
     },
-    { href: "#", label: "Calendar", element: <Link to="#">Calendar</Link> },
-    { href: "#", label: "Chat", element: <Link to="#">Chat</Link> },
-    { href: "#", label: "Wallet", element: <Link to="#">Wallet</Link> },
+    { href: "#", label: "Calendar" },
+    { href: "#", label: "Chat" },
+    { href: "#", label: "Wallet" },
   ];
 
   return (

@@ -5,7 +5,7 @@ function Button(props) {
   const [number, setNumber] = useState(0);
 
   const handleAdd = () => {
-    setNumber();
+    setNumber(number + 1);
   };
 
   console.log(number);
@@ -13,7 +13,7 @@ function Button(props) {
   return (
     <>
       <div>
-        s<button onClick={handleAdd}>Increase</button>{" "}
+        <button onClick={handleAdd}>Increase</button>{" "}
       </div>
       <p>{number}</p>
     </>
