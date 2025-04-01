@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../../styles/Customer.module.css";
 
@@ -24,56 +24,6 @@ function Customer(props) {
       ImageTitle: "/border.png",
       buttonPrice: "$16.75",
     },
-    {
-      id: 3,
-      name: "#C-004562",
-      titleName: "29 March 2020, 12:42 AM",
-      nameSelectName: "Fernando",
-      nameSectionName: "Blessing Hills 1st, London",
-      priceTitle: "$16.87",
-      ImageTitle: "/border.png",
-      buttonPrice: "$75.55",
-    },
-    {
-      id: 4,
-      name: "#C-004563",
-      titleName: "30 March 2020, 12:42 AM",
-      nameSelectName: "Yenni Tan",
-      nameSectionName: "Greensand 2nd, London",
-      priceTitle: "$18.8",
-      ImageTitle: "/border.png",
-      buttonPrice: "$57.75",
-    },
-    {
-      id: 5,
-      name: "#C-004564",
-      titleName: "5 April 2020, 12:42 AM",
-      nameSelectName: "Denny Chang",
-      nameSectionName: "St. Bakerfield 3rd, London",
-      priceTitle: "$38.92",
-      ImageTitle: "/border.png",
-      buttonPrice: "$21.75",
-    },
-    {
-      id: 6,
-      name: "#C-004565",
-      titleName: "8 April 2020, 12:42 AM",
-      nameSelectName: "Andrea Liaw",
-      nameSectionName: "Kingsroad 45th, London",
-      priceTitle: "$74.92",
-      ImageTitle: "/border.png",
-      buttonPrice: "$75.55",
-    },
-    {
-      id: 7,
-      name: "#C-004566",
-      titleName: "9 April 2020, 12:42 AM",
-      nameSelectName: "Siangny The",
-      nameSectionName: "11 Church Road, London",
-      priceTitle: "$78.52",
-      ImageTitle: "/border.png",
-      buttonPrice: "$21.61",
-    },
   ];
 
   return (
@@ -81,7 +31,12 @@ function Customer(props) {
       <div className={styles.live}></div>
       <div className={styles.inputCustomerSearch}>
         <div className={styles.search}>
-          <input type="search" placeholder="Search here" />
+          <input
+            type="search"
+            placeholder="Search here"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
         </div>
         <div className={styles.iconSearch}>
           <Image
@@ -125,6 +80,7 @@ function Customer(props) {
         </div>
         <div className={styles.borders}></div>
       </div>
+
       <div className={styles.headers}>
         <div className={styles.Customer}>
           <h1 className={styles.text}>General Customer</h1>
@@ -133,7 +89,7 @@ function Customer(props) {
           </p>
         </div>
         <div className={styles.CustomerSection}>
-          <button className={styles.btn}>
+          <button className={styles.btn} aria-label="Filter customers">
             <Image
               className={styles.photos}
               src="/Nest.png"
@@ -152,6 +108,7 @@ function Customer(props) {
           </button>
         </div>
       </div>
+
       <div className={styles.Section}>
         <div className={styles.Select}>
           <ul>
@@ -177,6 +134,7 @@ function Customer(props) {
           </ul>
         </div>
       </div>
+
       {arr.map((item) => (
         <div className={styles.Option} key={item.id}>
           <div className={styles.Value}>

@@ -13,7 +13,7 @@ function Button(props) {
   return (
     <>
       <div>
-        <button onClick={handleAdd}>Increase</button>{" "}
+        <button onClick={handleAdd}>Increase</button>
       </div>
       <p>{number}</p>
     </>

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -23,7 +22,7 @@ export default function Navigation() {
     <div>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {links.map(({ href, label }) => (
-          <Link key={label} href={href} passHref>
+          <Link key={label} href={href} passHref={href !== "#"}>
             <div
               style={{
                 background: router.pathname === href ? "red" : "transparent",
