@@ -28,59 +28,6 @@ function Customer(props) {
 
   return (
     <div>
-      <div className={styles.live}></div>
-      <div className={styles.inputCustomerSearch}>
-        <div className={styles.search}>
-          <input
-            type="search"
-            placeholder="Search here"
-            value={searchTerm}
-            onChange={handleSearchChange}
-          />
-        </div>
-        <div className={styles.iconSearch}>
-          <Image
-            className={styles.imgTag}
-            src="/alarm-clock.png"
-            alt="Alarm Clock"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className={styles.iconSearch}>
-          <Image
-            className={styles.imgTag}
-            src="/message.png"
-            alt="Message"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className={styles.iconSearch}>
-          <Image
-            className={styles.imgTag}
-            src="/price.png"
-            alt="Price"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className={styles.iconSearch}>
-          <Image
-            className={styles.imgTag}
-            src="/settings.png"
-            alt="Settings"
-            width={28}
-            height={28}
-          />
-        </div>
-        <hr />
-        <div className={styles.writeName}>
-          <p className={styles.customerText}>Hello, Samantha</p>
-        </div>
-        <div className={styles.borders}></div>
-      </div>
-
       <div className={styles.headers}>
         <div className={styles.Customer}>
           <h1 className={styles.text}>General Customer</h1>

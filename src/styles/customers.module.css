@@ -1,6 +1,7 @@
 :global(body) {
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 .headers {
@@ -100,16 +101,10 @@
   font-size: 16px;
 }
 
-.text3 {
-  margin-left: 85px;
-}
-
-.text4 {
-  margin-left: 90px;
-}
-
+.text3,
+.text4,
 .text5 {
-  margin-left: 5px;
+  margin-left: 85px;
 }
 
 .btn2 {
@@ -139,7 +134,7 @@
   margin-top: 5px;
 }
 
-.input-customer-search {
+.inputCustomerSearch {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -160,7 +155,7 @@
   padding-left: 15px;
 }
 
-.icon_search {
+.iconSearch {
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -169,7 +164,7 @@
   cursor: pointer;
 }
 
-hr {
+.my-hr {
   width: 0;
   height: 56px;
   border: 1px solid #d0d6de;
@@ -187,21 +182,24 @@ hr {
   cursor: pointer;
 }
 
-.customer_text {
+.customerText {
   font-size: 16px;
   color: #464255;
   font-family: sans-serif;
   margin-top: 50px;
 }
 
-.img_tag {
+.imgTag {
   margin-top: 10px;
   margin-left: 10px;
 }
 
-.left_sedap {
+.leftSedap {
   width: 349px;
   height: 1430px;
-  left: -4px;
   background-color: #f4f4f4;
+}
+.live {
+  display: flex;
+  justify-content: space-between;
 }

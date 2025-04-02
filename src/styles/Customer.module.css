@@ -207,3 +207,6 @@
   left: -4px;
   background-color: #f4f4f4;
 }
+:local(.live) {
+  display: flex;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/foods.module.css";
 import Image from "next/image";
-
 const foods = [
   {
     id: 1,
