@@ -1,4 +1,4 @@
-:global(body) {
+body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -199,6 +199,7 @@
   height: 1430px;
   background-color: #f4f4f4;
 }
+
 .live {
   display: flex;
   justify-content: space-between;

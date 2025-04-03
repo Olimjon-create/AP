@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   const router = useRouter();
@@ -59,12 +60,12 @@ export default function Navigation() {
                 alignItems: "center",
               }}
             >
-              <img
-                src={image}
+              <Image
+                src={`/${image}`}
                 alt={label}
+                width={20}
+                height={20}
                 style={{
-                  width: "20px",
-                  height: "20px",
                   marginRight: "10px",
                 }}
               />

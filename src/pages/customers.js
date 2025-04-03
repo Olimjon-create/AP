@@ -174,7 +174,7 @@ function Customer() {
             <div className={styles.writeName}>
               <p className={styles.customerText}>Hello, Samantha</p>
             </div>
-            <div className={styles.borders}></div>
+            <div className={styles["borders"]}></div>
           </div>
         </div>
       </div>
