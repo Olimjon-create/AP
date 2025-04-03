@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import "../styles/Customern.css";
-function Customer(props) {
+import styles from "../styles/customers.module.css";
+
+function Customer() {
   const arr = [
     {
       id: 1,
@@ -16,7 +17,7 @@ function Customer(props) {
     {
       id: 2,
       name: "#C-004561",
-      titleName: "28 March 2020, 12:42 AM",
+      titleName: "28 March 20 20, 12:42 AM",
       nameSelectName: "Rio Da Luca",
       nameSectionName: "Emerald Tower 6th, London",
       priceTitle: "$8.90",
@@ -73,65 +74,122 @@ function Customer(props) {
       ImageTitle: "/border.png",
       buttonPrice: "$21.61",
     },
+    {
+      id: 7,
+      name: "#C-004566",
+      titleName: "9 April 2020, 12:42 AM",
+      nameSelectName: "Siangny The",
+      nameSectionName: "11 Church Road, London",
+      priceTitle: "$78.52",
+      ImageTitle: "/border.png",
+      buttonPrice: "$21.61",
+    },
+    {
+      id: 7,
+      name: "#C-004566",
+      titleName: "9 April 2020, 12:42 AM",
+      nameSelectName: "Siangny The",
+      nameSectionName: "11 Church Road, London",
+      priceTitle: "$78.52",
+      ImageTitle: "/border.png",
+      buttonPrice: "$21.61",
+    },
+    {
+      id: 7,
+      name: "#C-004566",
+      titleName: "9 April 2020, 12:42 AM",
+      nameSelectName: "Siangny The",
+      nameSectionName: "11 Church Road, London",
+      priceTitle: "$78.52",
+      ImageTitle: "/border.png",
+      buttonPrice: "$21.61",
+    },
+    {
+      id: 7,
+      name: "#C-004566",
+      titleName: "9 April 2020, 12:42 AM",
+      nameSelectName: "Siangny The",
+      nameSectionName: "11 Church Road, London",
+      priceTitle: "$78.52",
+      ImageTitle: "/border.png",
+      buttonPrice: "$21.61",
+    },
+    {
+      id: 7,
+      name: "#C-004566",
+      titleName: "9 April 2020, 12:42 AM",
+      nameSelectName: "Siangny The",
+      nameSectionName: "11 Church Road, London",
+      priceTitle: "$78.52",
+      ImageTitle: "/border.png",
+      buttonPrice: "$21.61",
+    },
   ];
+
   return (
     <div>
-      <div className="live"></div>;
-      <div className="input-customer-search">
-        <div className="search">
-          <input type="search" placeholder="Search here" />
+      <div>
+        <div className={styles.live}>
+          <div className={styles.inputCustomerSearch}>
+            <div className={styles.search}>
+              <input type="search" placeholder="Search here" />
+            </div>
+            <div className={styles.iconSearch}>
+              <Image
+                className={styles.imgTag}
+                src="/alarm-clock.png"
+                alt="Alarm Clock"
+                width={28}
+                height={28}
+              />
+            </div>
+            <div className={styles.iconSearch}>
+              <Image
+                className={styles.imgTag}
+                src="/message.png"
+                alt="Message"
+                width={28}
+                height={28}
+              />
+            </div>
+            <div className={styles.iconSearch}>
+              <Image
+                className={styles.imgTag}
+                src="/price.png"
+                alt="Price"
+                width={28}
+                height={28}
+              />
+            </div>
+            <div className={styles.iconSearch}>
+              <Image
+                className={styles.imgTag}
+                src="/settings.png"
+                alt="Settings"
+                width={28}
+                height={28}
+              />
+            </div>
+
+            <div className={styles.writeName}>
+              <p className={styles.customerText}>Hello, Samantha</p>
+            </div>
+            <div className={styles["borders"]}></div>
+          </div>
         </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/alarm-clock.png"
-            alt="Alarm Clock"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/message.png"
-            alt="Message"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/price.png"
-            alt="Price"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/settings.png"
-            alt="Settings"
-            width={28}
-            height={28}
-          />
-        </div>
-        <hr />
-        <div className="write_name">
-          <p className="customer_text">Hello, Samantha</p>
-        </div>
-        <div className="borders"></div>
       </div>
-      <div className="headers">
-        <div className="Customer">
-          <h1 className="text">General Customer</h1>
-          <p className="text1">Here is your general customers list data</p>
+
+      <div className={styles["headers"]}>
+        <div className={styles["Customer"]}>
+          <h1 className={styles["text"]}>General Customer</h1>
+          <p className={styles["text1"]}>
+            Here is your general customers list data
+          </p>
         </div>
-        <div className="Customer-section">
-          <button className="btn">
+        <div className={styles["CustomerSection"]}>
+          <button className={styles["btn"]}>
             <Image
-              className="photos"
+              className={styles["photos"]}
               src="/Nest.png"
               alt="Filter"
               width={16}
@@ -139,7 +197,7 @@ function Customer(props) {
             />
             Filter
             <Image
-              className="photo"
+              className={styles["photo"]}
               src="/stay.png"
               alt="Stay"
               width={16}
@@ -148,8 +206,9 @@ function Customer(props) {
           </button>
         </div>
       </div>
-      <div className="Section">
-        <div className="Select">
+
+      <div className={styles.Section}>
+        <div className={styles.Select}>
           <ul>
             <li>Customer ID</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
@@ -157,14 +216,14 @@ function Customer(props) {
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
-        <div className="Select">
+        <div className={styles.Select}>
           <ul>
             <li>Customer Name</li>
             <li>Location</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
-        <div className="Select">
+        <div className={styles.Select}>
           <ul>
             <li>Total Spent</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
@@ -173,27 +232,30 @@ function Customer(props) {
           </ul>
         </div>
       </div>
+
       {arr.map((item) => (
-        <div className="Option" key={item.id}>
-          <div className="Value">
+        <div className={styles["Option"]} key={item["id"]}>
+          <div className={styles["Value"]}>
             <ul>
-              <li className="text3">{item.name}</li>
-              <li className="text4">{item.titleName}</li>
+              <li className={styles["text3"]}>{item["name"]}</li>
+              <li className={styles["text4"]}>{item["titleName"]}</li>
             </ul>
           </div>
-          <div className="Value">
+          <div className={styles["Value"]}>
             <ul>
-              <li className="text5">{item.nameSelectName}</li>
-              <li className="text4">{item.nameSectionName}</li>
+              <li className={styles["text5"]}>{item["nameSelectName"]}</li>
+              <li className={styles["text4"]}>{item["nameSectionName"]}</li>
             </ul>
           </div>
-          <div className="Value">
+          <div className={styles["Value"]}>
             <ul>
-              <li className="text4">{item.priceTitle}</li>
+              <li className={styles["text2"]}>{item["priceTitle"]}</li>
               <li>
-                <button className="btn2">{item.buttonPrice}</button>
+                <button className={styles["btn2"]}>
+                  {item["buttonPrice"]}
+                </button>
                 <Image
-                  className="picture"
+                  className={styles["picture"]}
                   src={item.ImageTitle}
                   alt="Border Image"
                   width={16}

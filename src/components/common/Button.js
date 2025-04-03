@@ -1,21 +1,23 @@
-import React from "react";
-import React, { useEffect, useState, memo } from "react";
+import React, { useState, memo } from "react";
+
 function Button(props) {
   console.log(props);
   const [number, setNumber] = useState(0);
 
   const handleAdd = () => {
-    setNumber(1);
+    setNumber(number + 1);
   };
+
   console.log(number);
+
+  return (
+    <>
+      <div>
+        <button onClick={handleAdd}>Increase</button>
+      </div>
+      <p>{number}</p>
+    </>
+  );
 }
-return (
-  <>
-    <div>
-      <button onClick={handleAdd}></button>
-    </div>
-    <p>{number}</p>
-  </>
-);
 
 export default memo(Button);

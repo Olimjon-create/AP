@@ -1,27 +1,31 @@
 import React from "react";
-import "../styles/foods.css";
+import "../styles/foods.module.css";
 import Image from "next/image";
 
 const foods = [
   {
     id: 1,
-    name: "",
+    name: "Noodle",
     category: "Noodle",
+    image: "/noodle.png",
   },
   {
     id: 2,
     name: "Pasta Alfredo",
     category: "Pasta",
+    image: "/pasta-alfredo.png",
   },
   {
     id: 3,
     name: "Vegetarian Pizza",
     category: "Pizza",
+    image: "/vegetarian-pizza.png",
   },
   {
     id: 4,
     name: "BBQ Chicken Wings",
     category: "Chicken",
+    image: "/bbq-chicken-wings.png",
   },
 ];
 
@@ -86,7 +90,7 @@ function Foods() {
         <div className="text_s">
           <h1 className="food_text">Foods</h1>
           <p className="food_text2">
-            Here is your menu's summary with graph view
+            Here is your menus summary with graph view
           </p>
         </div>
 
@@ -96,13 +100,13 @@ function Foods() {
 
         <div className="buttton_type">
           <button className="dod_button">
-            <img src="/dods.png" alt="Dods" />
+            <Image src="/dods.png" alt="Dods" width={20} height={20} />
           </button>
           <button className="dod_button">
-            <img src="/thumb.png" alt="Thumb" />
+            <Image src="/thumb.png" alt="Thumb" width={20} height={20} />
           </button>
           <button className="contact_button">
-            <img src="/contact.png" alt="Contact" />
+            <Image src="/contact.png" alt="Contact" width={20} height={20} />
             New Menu
           </button>
         </div>
@@ -122,7 +126,13 @@ function Foods() {
               <div className="food_button"></div>
               <div className="food_button"></div>
             </div>
-            <img className="food-image" src={food.image} alt={food.name} />
+            <Image
+              className="food-image"
+              src={food.image}
+              alt={food.name}
+              width={200}
+              height={200}
+            />
           </div>
         ))}
       </div>

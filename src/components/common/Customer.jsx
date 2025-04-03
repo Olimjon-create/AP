@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import "../../styles/Customer.css";
+import styles from "../../styles/Customer.module.css";
 
 function Customer(props) {
   const arr = [
@@ -24,115 +24,21 @@ function Customer(props) {
       ImageTitle: "/border.png",
       buttonPrice: "$16.75",
     },
-    {
-      id: 3,
-      name: "#C-004562",
-      titleName: "29 March 2020, 12:42 AM",
-      nameSelectName: "Fernando",
-      nameSectionName: "Blessing Hills 1st, London",
-      priceTitle: "$16.87",
-      ImageTitle: "/border.png",
-      buttonPrice: "$75.55",
-    },
-    {
-      id: 4,
-      name: "#C-004563",
-      titleName: "30 March 2020, 12:42 AM",
-      nameSelectName: "Yenni Tan",
-      nameSectionName: "Greensand 2nd, London",
-      priceTitle: "$18.8",
-      ImageTitle: "/border.png",
-      buttonPrice: "$57.75",
-    },
-    {
-      id: 5,
-      name: "#C-004564",
-      titleName: "5 April 2020, 12:42 AM",
-      nameSelectName: "Denny Chang",
-      nameSectionName: "St. Bakerfield 3rd, London",
-      priceTitle: "$38.92",
-      ImageTitle: "/border.png",
-      buttonPrice: "$21.75",
-    },
-    {
-      id: 6,
-      name: "#C-004565",
-      titleName: "8 April 2020, 12:42 AM",
-      nameSelectName: "Andrea Liaw",
-      nameSectionName: "Kingsroad 45th, London",
-      priceTitle: "$74.92",
-      ImageTitle: "/border.png",
-      buttonPrice: "$75.55",
-    },
-    {
-      id: 7,
-      name: "#C-004566",
-      titleName: "9 April 2020, 12:42 AM",
-      nameSelectName: "Siangny The",
-      nameSectionName: "11 Church Road, London",
-      priceTitle: "$78.52",
-      ImageTitle: "/border.png",
-      buttonPrice: "$21.61",
-    },
   ];
+
   return (
     <div>
-      <div className="live"></div>;
-      <div className="input-customer-search">
-        <div className="search">
-          <input type="search" placeholder="Search here" />
+      <div className={styles.headers}>
+        <div className={styles.Customer}>
+          <h1 className={styles.text}>General Customer</h1>
+          <p className={styles.text1}>
+            Here is your general customers list data
+          </p>
         </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/alarm-clock.png"
-            alt="Alarm Clock"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/message.png"
-            alt="Message"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/price.png"
-            alt="Price"
-            width={28}
-            height={28}
-          />
-        </div>
-        <div className="icon_search">
-          <Image
-            className="img_tag"
-            src="/settings.png"
-            alt="Settings"
-            width={28}
-            height={28}
-          />
-        </div>
-        <hr />
-        <div className="write_name">
-          <p className="customer_text">Hello, Samantha</p>
-        </div>
-        <div className="borders"></div>
-      </div>
-      <div className="headers">
-        <div className="Customer">
-          <h1 className="text">General Customer</h1>
-          <p className="text1">Here is your general customers list data</p>
-        </div>
-        <div className="Customer-section">
-          <button className="btn">
+        <div className={styles.CustomerSection}>
+          <button className={styles.btn} aria-label="Filter customers">
             <Image
-              className="photos"
+              className={styles.photos}
               src="/Nest.png"
               alt="Filter"
               width={16}
@@ -140,7 +46,7 @@ function Customer(props) {
             />
             Filter
             <Image
-              className="photo"
+              className={styles.photo}
               src="/stay.png"
               alt="Stay"
               width={16}
@@ -149,8 +55,9 @@ function Customer(props) {
           </button>
         </div>
       </div>
-      <div className="Section">
-        <div className="Select">
+
+      <div className={styles.Section}>
+        <div className={styles.Select}>
           <ul>
             <li>Customer ID</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
@@ -158,14 +65,14 @@ function Customer(props) {
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
-        <div className="Select">
+        <div className={styles.Select}>
           <ul>
             <li>Customer Name</li>
             <li>Location</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
           </ul>
         </div>
-        <div className="Select">
+        <div className={styles.Select}>
           <ul>
             <li>Total Spent</li>
             <Image src="/sort.png" alt="Sort" width={16} height={16} />
@@ -174,27 +81,28 @@ function Customer(props) {
           </ul>
         </div>
       </div>
+
       {arr.map((item) => (
-        <div className="Option" key={item.id}>
-          <div className="Value">
+        <div className={styles.Option} key={item.id}>
+          <div className={styles.Value}>
             <ul>
-              <li className="text3">{item.name}</li>
-              <li className="text4">{item.titleName}</li>
+              <li className={styles.text3}>{item.name}</li>
+              <li className={styles.text4}>{item.titleName}</li>
             </ul>
           </div>
-          <div className="Value">
+          <div className={styles.Value}>
             <ul>
-              <li className="text5">{item.nameSelectName}</li>
-              <li className="text4">{item.nameSectionName}</li>
+              <li className={styles.text5}>{item.nameSelectName}</li>
+              <li className={styles.text4}>{item.nameSectionName}</li>
             </ul>
           </div>
-          <div className="Value">
+          <div className={styles.Value}>
             <ul>
-              <li className="text4">{item.priceTitle}</li>
+              <li className={styles.text4}>{item.priceTitle}</li>
               <li>
-                <button className="btn2">{item.buttonPrice}</button>
+                <button className={styles.btn2}>{item.buttonPrice}</button>
                 <Image
-                  className="picture"
+                  className={styles.picture}
                   src={item.ImageTitle}
                   alt="Border Image"
                   width={16}
